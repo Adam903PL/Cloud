@@ -1,0 +1,26 @@
+.mainContainerFolder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+.mainContainerFiles{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.mainFilesDiv{
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.726);
+    position: absolute;
+    display: none;
+}

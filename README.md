@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Local Cloud
 
-Currently, two official plugins are available:
+Local Cloud is a lightweight, locally hosted cloud application that enables you to set up a private file server on your computer. The application allows you to access, browse, and download files from your computer through a web interface, accessible from any device within your local network.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Built with React and TypeScript, Local Cloud provides an efficient and user-friendly way to manage your files in a local environment, making it ideal for private networks or small teams who need quick access to files without relying on third-party cloud services.
 
-## Expanding the ESLint configuration
+# Features
+**Local Cloud Access:** Easily set up a local cloud environment accessible within your network.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**File Management:** Browse and download files through a secure, responsive interface.
 
-- Configure the top-level `parserOptions` property like this:
+# Getting Started
+## Prerequisite
+* Node.js and npm installed on your machine.
+* A secondary drive or partition for storage (optional, recommended for better file organization).
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Installation
+- Clone the Repository
+
+```bash
+git clone https://github.com/Adam903PL/Cloud.git
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+- Go to folder
+```bash
+cd Cloud
+```
+- Install necessary modules
+```bash
+npm install
+```
+- Create dist folder
+```bash
+npm run build
+```
+- Install nodemon
+```bash
+cd server
+npm i nodemon
+```
+# Command to start Cloud 
+#### You must be in the server folder 
+```bash
+npm run dev
 ```

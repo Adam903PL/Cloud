@@ -17,6 +17,7 @@
     "fs": "^0.0.1-security",
     "node-fetch": "^3.3.2",
     "nodemon": "^3.1.7",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "react-router-dom": "^6.27.0"
   }
 }

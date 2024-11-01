@@ -5,6 +5,9 @@ const path = require('path');
 const fs = require('fs');
 let fetch;
 
+
+
+
 (async () => {
     fetch = (await import('node-fetch')).default;
 

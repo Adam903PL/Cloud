@@ -49,7 +49,6 @@ function Documents() {
 
     return (
         <>
-        <h1>Testing</h1>
             {showFiles && (
                 <div className="mainFilesDiv" id="fileDiv" onClick={hideFilesContent}>
 

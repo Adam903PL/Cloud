@@ -1,9 +1,10 @@
+// App.tsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Documents from "./Documents";
 import FolderPage from "./FolderPage";
 
 function App() {
-  return (  
+  return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Documents />} />
